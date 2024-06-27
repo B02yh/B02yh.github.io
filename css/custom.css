@@ -1,0 +1,62 @@
+/* 一图流教程 */
+  /* 白天模式头图与页脚遮罩 */
+  [data-theme="light"] #page-header::before {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    z-index: -3;
+  }
+  [data-theme="light"] #footer::before {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    z-index: -3;
+  }
+  
+  /* 页脚与头图透明 */
+  #footer {
+    background: transparent !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+  }
+  #page-header {
+    background: transparent !important;
+  }
+  /* 夜间模式页脚遮罩隐藏 */
+  [data-theme="dark"] #footer::before {
+    background: transparent !important;
+  }
+  /* 夜间模式页脚头部遮罩隐藏 */
+  [data-theme="dark"] #page-header::before {
+    background: transparent !important;
+  }
+  
+  /* 阅读模式 */
+  .read-mode #aside-content .card-widget {
+    background: rgba(158, 204, 171, 0.5) !important;
+  }
+  .read-mode div#post {
+    background: rgba(158, 204, 171, 0.5) !important;
+  }
+  
+  /* 夜间模式下的阅读模式 */
+  [data-theme="dark"] .read-mode #aside-content .card-widget {
+    background: rgba(25, 25, 25, 0.9) !important;
+    color: #ffffff;
+  }
+  [data-theme="dark"] .read-mode div#post {
+    background: rgba(25, 25, 25, 0.9) !important;
+    color: #ffffff;
+  }
+/* 一图流教程end */
+  /* 小冰分类分类磁铁黑夜模式适配 */
+  /* 一般状态 */
+  [data-theme="dark"] .magnet_link_context {
+      background: #1e1e1e;
+      color: antiquewhite;
+      border-radius: 8px;
+  }
+
+  /* 鼠标悬浮状态 */
+  [data-theme="dark"] .magnet_link_context:hover {
+      background: rgb(54, 185, 176);
+      color: #f2f2f2;
+      border-radius: 8px;
+  }
+
+  /* 首页分类磁贴end */
