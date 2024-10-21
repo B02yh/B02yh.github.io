@@ -1,5 +1,8 @@
 /* 一图流教程 */
   /* 白天模式头图与页脚遮罩 */
+  #web_bg {
+    z-index: 0;
+  }
   [data-theme="light"] #page-header::before {
     background-color: rgba(0, 0, 0, 0.2) !important;
     z-index: -3;
@@ -12,7 +15,7 @@
   /* 页脚与头图透明 */
   #footer {
     background: transparent !important;
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    /* background-color: rgba(0, 0, 0, 0.2) !important; */
   }
   #page-header {
     background: transparent !important;
